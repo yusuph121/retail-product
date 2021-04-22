@@ -1,4 +1,4 @@
-package com.brownfield.pss.fares.entity;
+package com.retail.pos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

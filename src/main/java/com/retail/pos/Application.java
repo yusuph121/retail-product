@@ -1,4 +1,4 @@
-package com.brownfield.pss.fares;
+package com.retail.pos;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,15 +11,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.brownfield.pss.fares.entity.Fare;
-import com.brownfield.pss.fares.repository.FaresRepository;
+import com.retail.pos.model.Fare;
+import com.retail.pos.repository.ProductRepository;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 	private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
 	@Autowired
-	FaresRepository faresRepository;
+	ProductRepository faresRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
